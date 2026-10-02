@@ -1,0 +1,17 @@
+A = rand(1,100);
+figure(Name="Test_figure");
+subplot(2,2,1);
+bar(A);
+subplot(2,2,2);
+stem(A);
+subplot(2,2,3);
+plot(A);
+subplot(2,2,4);
+plot(A,Color="g",LineWidth=2);
+xlabel("отсчеты");
+ylabel("амплитуда");
+title("случайный вектор");
+legend("rand()");
+xlim([1,90]);
+ylim([min(A),max(A)]);
+grid on;
